@@ -7,13 +7,33 @@ import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
 import mightycoder from "../assets/mightycoder.svg";
 import resume from "../assets/resume.pdf";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const handleEmailMe = () => {
     window.open("mailto:codesumax@gmail.com");
   };
+
+  const sidebar_variant = {
+    hidden: {
+      x: "-20vw",
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring",
+      },
+    },
+  };
   return (
-    <div className="sidebar">
+    <motion.div
+      className="sidebar"
+      variants={sidebar_variant}
+      initial="hidden"
+      animate="visible"
+    >
       <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name">A.N.V.K.S.SAI</div>
       <div className="sidebar__item sidebar__title">Mobile App Developer</div>
@@ -48,7 +68,7 @@ const Sidebar = () => {
       <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
         email me
       </div>
-    </div>
+    </motion.div>
   );
 };
 
