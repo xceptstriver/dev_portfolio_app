@@ -10,36 +10,49 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
+    icon: backend,
+    title: "Mobile App Development",
+    about: [
+      "I can build scalable mobile apps using",
+      <strong key={1}> React Native, Kotlin and Swift </strong>,
+    ],
+  },
+  {
     icon: computer,
     title: "Frontend Development",
-    about:
-      "I can build a beautiful and scalable SPA using HTML, CSS and React.js",
+    about: [
+      "I can build a beautiful and scalable SPA using",
+      <strong key={1}> HTML, CSS and React </strong>,
+    ],
   },
   {
     icon: repair,
     title: "Backend  Development",
-    about: "handle database, server, api using and SQLlite",
+    about: [
+      "I can handle database, server and api using",
+      <strong key={1}> NodeJS, Express and Mongo DB </strong>,
+    ],
   },
   {
     icon: api,
     title: "API Development",
-    about: "I can develop robust REST API using django-rest-api ",
+    about: [
+      "I can develop robust REST API using",
+      <strong key={1}> NodeJS, Express and Mongo DB </strong>,
+    ],
   },
   {
     icon: algo,
     title: "Competitive Coder",
-    about: "a daily problem solver in HackerRank and Leetcode",
+    about: [
+      "IA daily problem solver in",
+      <strong key={1}> HackerRank and Leetcode </strong>,
+    ],
   },
   {
     icon: puzzle,
     title: "UI/UX designer",
-    about: "minimalistic user interface designer using figma and  framer",
-  },
-  {
-    icon: computer,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    about: "A minimalistic user interface designer using figma and  framer",
   },
 ];
 
@@ -70,8 +83,8 @@ const About = () => {
       exit="exit"
     >
       <h6 className="about__intro">
-        I describe myself as someone who's persistant, a quick learner and loves
-        problem solving by using simple and scalable solutions.
+        A Full Stack Mobile App Developer passionate about pushing code to
+        millions of users.
       </h6>
       <div className="container about__container">
         <h6 className="about__heading">What I offer</h6>

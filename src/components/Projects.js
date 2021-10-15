@@ -5,11 +5,13 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projects_data);
+  const [active, setActive] = useState("All");
 
   const filterProjects = (name) => {
     console.log("name mc", name);
     let filter_arr = projects_data.filter((_) => _.category.includes(name));
     setProjects(filter_arr);
+    setActive(name);
   };
 
   const project_variants = {
@@ -39,16 +41,22 @@ const Projects = () => {
     >
       <div className="projects__navbar">
         <div
-          className="navbar__pitem"
-          onClick={() => setProjects(projects_data)}
+          className={active == "All" && "projects__navbar-active"}
+          onClick={() => {
+            setActive("All");
+            setProjects(projects_data);
+          }}
         >
           All
         </div>
-        <div className="navbar__pitem" onClick={() => filterProjects("Office")}>
+        <div
+          className={active == "Office" && "projects__navbar-active"}
+          onClick={() => filterProjects("Office")}
+        >
           Office
         </div>
         <div
-          className="navbar__pitem"
+          className={active == "Personal" && "projects__navbar-active"}
           onClick={() => filterProjects("Personal")}
         >
           Personal

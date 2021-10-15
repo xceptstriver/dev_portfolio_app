@@ -5,7 +5,7 @@ import instagram from "../assets/icons/instagram.svg";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
-import mightycoder from "../assets/mightycoder.svg";
+import ready_me from "../assets/ready_me.png";
 import resume from "../assets/resume.pdf";
 import { motion } from "framer-motion";
 
@@ -34,7 +34,7 @@ const Sidebar = () => {
       initial="hidden"
       animate="visible"
     >
-      <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
+      <img src={ready_me} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name">A.N.V.K.S.SAI</div>
       <div className="sidebar__item sidebar__title">Mobile App Developer</div>
       <a href={resume} download="resume.pdf">
@@ -53,7 +53,7 @@ const Sidebar = () => {
       </figure>
       <div className="sidebar__contact">
         <div className="sidebar__item sidebar__github">
-          <a href="!#">
+          <a href="https://github.com/xceptstriver">
             <img src={github} alt="github" className="sidebar__icon mr-3" />
             github
           </a>

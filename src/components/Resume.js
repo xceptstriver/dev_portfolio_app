@@ -6,15 +6,36 @@ import { motion } from "framer-motion";
 
 const languages = [
   {
-    icon: python,
-    name: "Python",
-    level: "45",
+    icon: react,
+    name: "Javascript",
+    level: "90",
   },
   {
     icon: react,
-    name: "Java",
+    name: "React Native",
+    level: "85",
+  },
+  {
+    icon: react,
+    name: "Redux",
+    level: "90",
+  },
+  {
+    icon: react,
+    name: "React.Js",
     level: "60",
   },
+  {
+    icon: react,
+    name: "NodeJS",
+    level: "50",
+  },
+  {
+    icon: react,
+    name: "MongoDB",
+    level: "40",
+  },
+
   {
     icon: react,
     name: "HTML",
@@ -22,22 +43,48 @@ const languages = [
   },
   {
     icon: react,
-    name: "react",
+    name: "CSS",
     level: "60",
   },
   {
     icon: react,
-    name: "Django",
+    name: "Bootstrap",
+    level: "40",
+  },
+
+  {
+    icon: react,
+    name: "Java",
     level: "80",
   },
   {
     icon: react,
-    name: "Bootstrap",
-    level: "80",
+    name: "Kotlin",
+    level: "60",
   },
 ];
 
 const tools = [
+  {
+    icon: react,
+    name: "VSCode",
+    level: "85",
+  },
+  {
+    icon: react,
+    name: "Android Studio",
+    level: "85",
+  },
+  {
+    icon: react,
+    name: "React Native Debugger",
+    level: "90",
+  },
+  {
+    icon: react,
+    name: "XCode",
+    level: "60",
+  },
   {
     icon: react,
     name: "Figma",
@@ -88,26 +135,25 @@ const Resume = () => {
     >
       <div className="row">
         <div className="col-lg-6 resume-card">
-          <h4 className="resume-card__heading">Education</h4>
+          <h4 className="resume-card__heading">Experience</h4>
           <div className="resume-card__body">
-            <h5 className="resume-card__title">Computer Science Enginnering</h5>
-            <p className="resume-card__name">
-              Academy of Technology(2017-2021)
-            </p>
+            <h5 className="resume-card__title">Software Engineer</h5>
+            <p className="resume-card__name">Moglix (2019 - present)</p>
             <p className="resume-card__details">
-              I am currently persuing B.tech in Computer Science Engineering
-              from Academy of Technology
+              Currently working as a Full Stack Mobile App Developer for a B2B
+              commerce startup.
             </p>
           </div>
         </div>
         <div className="col-lg-6 resume-card">
-          <h4 className="resume-card__heading">Experience</h4>
+          <h4 className="resume-card__heading">Education</h4>
           <div className="resume-card__body">
-            <h5 className="resume-card__title">Intern</h5>
-            <p className="resume-card__name">TCS (2020)</p>
+            <h5 className="resume-card__title">Electrical Enginnering</h5>
+            <p className="resume-card__name">
+              St.Thomas' College of Engineering and Technology(2015 - 2019)
+            </p>
             <p className="resume-card__details">
-              I work as a intern in TCS and also completed some projects on
-              testing
+              Pursued B.Tech in Electrical Engineering
             </p>
           </div>
         </div>
